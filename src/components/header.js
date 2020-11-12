@@ -1,6 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
-export default function Portfolio() {
+
+function Header() {
   return (
     <div>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -41,3 +42,5 @@ export default function Portfolio() {
     </div>
   );
 }
+
+export default Header;

@@ -1,0 +1,14 @@
+.main {
+    background-color: gainsboro;
+}
+
+.header__data {
+    background-color: lightgray;
+}
+
+.myImage {
+    height: 400px;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 10px 25px 0 rgba(0, 0, 0, 0.19);
+}
