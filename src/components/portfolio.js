@@ -1,19 +1,36 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import Header from "../components/header.js";
-import "./portfolio.css";
+import "../styles/portfolio.css";
+import Navbar from "../components/Navbar.js";
+import ParticlesBg from "particles-bg";
+
 export default function Portfolio() {
   return (
-    <div className="main">
-      <div className="header__data">
-        <Header />
+    <div>
+      <ParticlesBg type="cobweb" bg={true} />
+      <div className="port_navbar">
+        <Navbar></Navbar>
       </div>
 
-      <div className="image__display">
-        <img
-          src="data:image/jpeg;base64,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"
-          className="myImage"
-        />
+      <div className="port__header">
+        <Header></Header>
+      </div>
+
+      <div className="port__welcomeimage">
+        <h1>image</h1>
+      </div>
+
+      <div className="port__aboutme">
+        <h1>about me</h1>
+      </div>
+
+      <div className="port__signUp">
+        <h1>sign up</h1>
+      </div>
+
+      <div className="port__contactme">
+        <h1>contact me</h1>
       </div>
     </div>
   );
