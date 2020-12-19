@@ -5,7 +5,11 @@ import "../styles/header.css";
 function Header() {
   return (
     <div>
-      <img src={suryansh} className="suryansh__image" alt="" />
+      <div>
+        <img src={suryansh} className="suryansh__image" alt="" />
+      </div>
+
+      <div className="center">Hello!</div>
     </div>
   );
 }

@@ -3,6 +3,43 @@
     margin-left: auto;
     margin-right: auto;
     opacity: 0.9;
-    width: 50%;
+    width: 30%;
     border-radius: 10px;
+    filter: grayscale(50%);
+    -webkit-transition: color 2s, width 2s;
+    -moz-transition: color 2s, width 2s;
+    transition: color 2s, width 2s;
+    border-style: solid;
+    border-width: 5px;
+    position: relative;
+}
+
+.suryansh__image:hover {
+    width: 50%;
+}
+
+.center {
+    display: block;
+    margin-left: 50%;
+    margin-right: 50%;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    -webkit-transition: color 1s, font-size 1s, top 1s;
+    -moz-transition: color 1s, font-size 1s, top 1s;
+    -o-transition: color 1s, font-size 1s, top 1s;
+    transition: color 1s, font-size 1s, top 1s;
+    padding: 50px;
+    background-color: transparent;
+    border-radius: 10px;
+    color: transparent;
+    opacity: 0.8;
+}
+
+.center:hover {
+    font-size: 40px;
+    color: white;
+    background-color: #0A0A0A;
+    padding: 10px;
 }

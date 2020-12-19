@@ -43,6 +43,12 @@
     transition: color 1s, font-size 1s;
 }
 
+.port__resume {
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .port__contactme:hover {
     background-color: black;
     color: white;

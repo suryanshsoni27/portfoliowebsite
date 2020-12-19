@@ -1,0 +1,15 @@
+#loader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10vw;
+    height: 10vh;
+    background-color: transparent;
+}
+
+.image {
+    width: 20px;
+    margin-top: auto;
+    display: flex;
+    flex-wrap: wrap;
+}

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import Header from "../components/header.js";
 import "../styles/portfolio.css";
@@ -6,10 +6,21 @@ import Navbar from "../components/Navbar.js";
 import ParticlesBg from "particles-bg";
 import { Card, ListGroup, Carousel } from "react-bootstrap";
 import { Autorenew } from "@material-ui/icons";
+import { Document, Page } from "react-pdf";
+import Pdffile from "../components/Pdffile";
+import Loader from "../components/Loader";
+
 export default function Portfolio() {
+  const [numPages, setNumPages] = useState(null);
+  const [pageNumber, setPageNumber] = useState(1);
+
+  function onDocumentLoadSuccess({ numPages }) {
+    setNumPages(numPages);
+  }
   return (
     <div>
-      <ParticlesBg type="cobweb" bg={true} />
+      <ParticlesBg type="cobweb" bg={true} color="black" />
+
       <div className="port_navbar">
         <Navbar></Navbar>
       </div>
@@ -38,7 +49,7 @@ export default function Portfolio() {
 
       <div className="port__cara" id="port__cara">
         <Carousel>
-          <Carousel.Item interval={1000}>
+          <Carousel.Item interval={8000}>
             <a href="https://github.com/suryanshsoni27" className="d-block">
               <img
                 href="https://github.com/suryanshsoni27"
@@ -48,8 +59,11 @@ export default function Portfolio() {
               />
             </a>
           </Carousel.Item>
-          <Carousel.Item interval={500}>
-            <a href="linkedin.com/in/suryansh-soni" className="d-block">
+          <Carousel.Item interval={8000}>
+            <a
+              href="https://www.linkedin.com/in/suryansh-soni?trk=profile-badge"
+              className="d-block"
+            >
               <img
                 href="www.linkedin.com/in/suryansh-soni"
                 className="d-block m-auto w-50 h-100"
@@ -65,20 +79,38 @@ export default function Portfolio() {
         <h1>sign up</h1>
       </div>
 */}
+      <div className="port__resume">
+        <Pdffile />
+      </div>
 
       <div className="port__contactme" id="port__contactme">
         <Card className="port__contactme" style={{ width: "auto" }}>
           <ListGroup className="port__contactme" variant="flush">
             <ListGroup.Item className="port__contactme">
-              My Email : szscode2727@gmail.com
-            </ListGroup.Item>
-            <ListGroup.Item className="port__contactme">
-              Phone number : +1(334)-332-4627
-            </ListGroup.Item>
-            <ListGroup.Item className="port__contactme">
-              <a href="linkedin.com/in/suryansh-soni">
-                linkedin.com/in/suryansh-soni
+              <a href="mailto: szscode2727@gmail.com">
+                My Email : szscode2727@gmail.com
               </a>
+            </ListGroup.Item>
+            <ListGroup.Item className="port__contactme">
+              <a href="tel:+1(334)-332-4627">Phone number : +1(334)-332-4627</a>
+            </ListGroup.Item>
+            <ListGroup.Item className="port__contactme">
+              <div
+                class="LI-profile-badge"
+                data-version="v1"
+                data-size="medium"
+                data-locale="en_US"
+                data-type="vertical"
+                data-theme="dark"
+                data-vanity="suryansh-soni"
+              >
+                <a
+                  class="LI-simple-link"
+                  href="https://www.linkedin.com/in/suryansh-soni?trk=profile-badge"
+                >
+                  linkedin.com/in/suryansh-soni
+                </a>
+              </div>
             </ListGroup.Item>
           </ListGroup>
         </Card>
