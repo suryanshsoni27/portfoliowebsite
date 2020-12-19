@@ -18,8 +18,8 @@ function Navbar() {
           Home
         </a>
 
-        <a href="#contact">Contact</a>
-        <a href="#about">About</a>
+        <a href="#port__contactme">Contact</a>
+        <a href="#port__aboutme">About</a>
         <a href="#id" class="icon" onClick={() => this.myFunction()}>
           <i className="fa fa-bars"></i>
         </a>

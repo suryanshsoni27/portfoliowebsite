@@ -13,3 +13,11 @@
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 10px 25px 0 rgba(0, 0, 0, 0.19);
 } */
+
+.port__aboutme {}
+
+.port__contactme {
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
