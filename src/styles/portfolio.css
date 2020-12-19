@@ -14,10 +14,37 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 10px 25px 0 rgba(0, 0, 0, 0.19);
 } */
 
-.port__aboutme {}
-
-.port__contactme {
+.port__aboutme {
     margin-top: 100px;
     margin-left: auto;
     margin-right: auto;
+    -webkit-transition: color 1s, font-size 1s;
+    -moz-transition: color 1s, font-size 1s;
+    -o-transition: color 1s, font-size 1s;
+    transition: color 1s, font-size 1s;
+    border-radius: 10px;
+}
+
+.port__aboutme:hover {
+    background-color: black;
+    color: white;
+    font-size: 40px
+}
+
+.port__contactme {
+    background-color: black;
+    color: white;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: auto;
+    -webkit-transition: color 1s, font-size 1s;
+    -moz-transition: color 1s, font-size 1s;
+    transition: color 1s, font-size 1s;
+}
+
+.port__contactme:hover {
+    background-color: black;
+    color: white;
+    font-size: 20px
 }
