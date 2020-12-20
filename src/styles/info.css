@@ -1,0 +1,20 @@
+.info__card {
+    padding: 10px;
+    -webkit-transition: color 1s, font-size 1s, width 1s;
+    -moz-transition: color 1s, font-size 1s, width 1s;
+    -o-transition: color 1s, font-size 1s, width 1s;
+    transition: color 1s, font-size 1s, width 1s;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+    background-color: #D3D3D3;
+    border-style: solid;
+    border-width: 1px
+}
+
+.info__card:hover {
+    background-color: black;
+    color: white;
+    font-size: 20px;
+}

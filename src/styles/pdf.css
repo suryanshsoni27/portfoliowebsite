@@ -1,0 +1,31 @@
+.resume {
+    padding: 30px;
+    background-color: black;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    border-radius: 5px;
+    -webkit-transition: color 1s, font-size 2s, width 4s;
+    -moz-transition: color 1s, font-size 2s, width 4s;
+    transition: color 1s, font-size 2s, width 4s;
+    text-decoration: none;
+    color: white
+}
+
+.pdf__a {
+    color: white;
+    text-decoration: none;
+}
+
+.pdf__a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.resume:hover {
+    background-color: black;
+    font-size: 20px;
+    color: white;
+    width: 50%;
+}

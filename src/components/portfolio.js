@@ -9,6 +9,10 @@ import { Autorenew } from "@material-ui/icons";
 import { Document, Page } from "react-pdf";
 import Pdffile from "../components/Pdffile";
 import Loader from "../components/Loader";
+import Contact from "../components/Contact";
+import Carusel from "../components/Carusel";
+import SideNav from "../components/SideNav";
+import InfoCard from "../components/InfoCard";
 
 export default function Portfolio() {
   const [numPages, setNumPages] = useState(null);
@@ -21,8 +25,12 @@ export default function Portfolio() {
     <div>
       <ParticlesBg type="cobweb" bg={true} color="black" />
 
-      <div className="port_navbar">
+      {/*<div className="port_navbar">
         <Navbar></Navbar>
+  </div>*/}
+
+      <div className="port__sidenav">
+        <SideNav />
       </div>
 
       <div className="port__header">
@@ -33,8 +41,8 @@ export default function Portfolio() {
         <h1>image</h1>
   </div>*/}
 
-      <div className="port__aboutme" id="port__aboutme">
-        <Card className="port__aboutme">
+      <div>
+        <Card className="port__aboutme" id="port__aboutme">
           <Card.Header>About me</Card.Header>
           <Card.Body>
             <blockquote className="blockquote mb-0">
@@ -47,73 +55,20 @@ export default function Portfolio() {
         </Card>
       </div>
 
-      <div className="port__cara" id="port__cara">
-        <Carousel>
-          <Carousel.Item interval={8000}>
-            <a href="https://github.com/suryanshsoni27" className="d-block">
-              <img
-                href="https://github.com/suryanshsoni27"
-                className="d-block m-auto w-50 h-auto"
-                src="https://news.efinancialcareers.com/binaries/content/gallery/efinancial-careers/articles/2019/04/github.jpg"
-                alt="First slide"
-              />
-            </a>
-          </Carousel.Item>
-          <Carousel.Item interval={8000}>
-            <a
-              href="https://www.linkedin.com/in/suryansh-soni?trk=profile-badge"
-              className="d-block"
-            >
-              <img
-                href="www.linkedin.com/in/suryansh-soni"
-                className="d-block m-auto w-50 h-100"
-                src="https://www.kinesisinc.com/wp-content/uploads/2020/04/linkedin-101-hero@2x.png"
-                alt="Third slide"
-              />
-            </a>
-          </Carousel.Item>
-        </Carousel>
+      <div className="port__infocard">
+        <InfoCard />
       </div>
 
-      {/*<div className="port__signUp">
-        <h1>sign up</h1>
+      <div className="port__cara" id="port__cara">
+        <Carusel />
       </div>
-*/}
+
       <div className="port__resume">
         <Pdffile />
       </div>
 
       <div className="port__contactme" id="port__contactme">
-        <Card className="port__contactme" style={{ width: "auto" }}>
-          <ListGroup className="port__contactme" variant="flush">
-            <ListGroup.Item className="port__contactme">
-              <a href="mailto: szscode2727@gmail.com">
-                My Email : szscode2727@gmail.com
-              </a>
-            </ListGroup.Item>
-            <ListGroup.Item className="port__contactme">
-              <a href="tel:+1(334)-332-4627">Phone number : +1(334)-332-4627</a>
-            </ListGroup.Item>
-            <ListGroup.Item className="port__contactme">
-              <div
-                class="LI-profile-badge"
-                data-version="v1"
-                data-size="medium"
-                data-locale="en_US"
-                data-type="vertical"
-                data-theme="dark"
-                data-vanity="suryansh-soni"
-              >
-                <a
-                  class="LI-simple-link"
-                  href="https://www.linkedin.com/in/suryansh-soni?trk=profile-badge"
-                >
-                  linkedin.com/in/suryansh-soni
-                </a>
-              </div>
-            </ListGroup.Item>
-          </ListGroup>
-        </Card>
+        <Contact />
       </div>
     </div>
   );
