@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/SideNav.css";
 import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
-
+import { Button } from "react-bootstrap";
 function SideNav() {
   function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
@@ -19,21 +19,8 @@ function SideNav() {
           &times;
         </a>
 
-        <a href="#port__aboutme" onClick={closeNav}>
-          About
-        </a>
-
-        <a href="#port__contactme" onClick={closeNav}>
-          Contact
-        </a>
-
-        <a href="#port__resume" onClick={closeNav}>
-          Resume
-        </a>
-
         <Link to="/Workex">Work Experience</Link>
       </div>
-
       <span className="spantag" onClick={openNav}>
         &#9776;
       </span>

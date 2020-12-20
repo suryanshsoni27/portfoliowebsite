@@ -23,7 +23,7 @@ export default function Portfolio() {
   }
   return (
     <div>
-      <ParticlesBg type="cobweb" bg={true} color="black" />
+      <ParticlesBg type="cobweb" bg={true} color="#0A0A0A" />
 
       {/*<div className="port_navbar">
         <Navbar></Navbar>
