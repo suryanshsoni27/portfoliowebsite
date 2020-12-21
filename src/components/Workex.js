@@ -69,6 +69,7 @@ function Workex() {
           </div>
         </div>
       </div>
+      <footer className="footer__div" />
     </div>
   );
 }
