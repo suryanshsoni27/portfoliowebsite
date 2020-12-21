@@ -2,18 +2,20 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import Header from "../components/header.js";
 import "../styles/portfolio.css";
-import Navbar from "../components/Navbar.js";
+// import Navbar from "../components/Navbar.js";
 import ParticlesBg from "particles-bg";
-import { Card, ListGroup, Carousel } from "react-bootstrap";
-import { Autorenew } from "@material-ui/icons";
-import { Document, Page } from "react-pdf";
-import Pdffile from "../components/Pdffile";
-import Loader from "../components/Loader";
+import { Card } from "react-bootstrap";
+// import { Autorenew } from "@material-ui/icons";
+// import { Document, Page } from "react-pdf";
+
+// import Loader from "../components/Loader";
 import Contact from "../components/Contact";
 import Carusel from "../components/Carusel";
 import SideNav from "../components/SideNav";
 import InfoCard from "../components/InfoCard";
-
+// import ReactPDF from "@react-pdf/renderer";
+import Pdfrender from "../components/pdfrender";
+import Pdffile from "../components/Pdffile";
 export default function Portfolio() {
   const [numPages, setNumPages] = useState(null);
   const [pageNumber, setPageNumber] = useState(1);
@@ -22,7 +24,7 @@ export default function Portfolio() {
     setNumPages(numPages);
   }
   return (
-    <div>
+    <div className="portfolio">
       <ParticlesBg type="cobweb" bg={true} color="#0A0A0A" />
 
       {/*<div className="port_navbar">
@@ -63,7 +65,8 @@ export default function Portfolio() {
         <Carusel />
       </div>
 
-      <div className="port__resume">
+      <div className="port__resume" id="port__resume">
+        {/*<Pdfrender />*/}
         <Pdffile />
       </div>
 

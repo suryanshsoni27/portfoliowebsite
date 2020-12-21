@@ -20,6 +20,7 @@ function SideNav() {
         </a>
 
         <Link to="/Workex">Work Experience</Link>
+        <Link to="/Projects">Projects</Link>
       </div>
       <span className="spantag" onClick={openNav}>
         &#9776;

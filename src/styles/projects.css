@@ -1,0 +1,11 @@
+.projects__main {
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__div {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
