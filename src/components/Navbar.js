@@ -1,35 +1,44 @@
 import React from "react";
 import "../styles/navbar.css";
-import ParticlesBg from "particles-bg";
-function Navbar() {
-  const myFunction = () => {
-    // var ReactDOM = require("react-dom");
-    // // var x = document.getElementById("myTopnav");
-    // var x = ReactDOM.findDOMNode("myTopnav").value;
-    // if (x.className === "topnav") {
-    //   x.className += " responsive";
-    // } else {
-    //   x.className = "topnav";
-    // }
-  };
-
+import SideNav from "./SideNav";
+import { Nav, Navbar, Button } from "react-bootstrap";
+function Navbari() {
   return (
-    <div>
-      <div className="topnav" id="myTopnav">
-        <a href="#home" className="active">
-          Home
-        </a>
+    <div className="navbar__bar">
+      <Navbar className="navbar__bar" expand="lg" bg="dark" variant="dark">
+        <Nav.Item>
+          <SideNav></SideNav>
+        </Nav.Item>
 
-        <a href="#port__contactme">Contact</a>
-        <a href="#port__aboutme">About</a>
-        <a href="#id" class="icon" onClick={myFunction()}>
-          <i className="fa fa-bars"></i>
-        </a>
-      </div>
-
-      <div styles="padding-left:16px"></div>
+        <Nav.Item className="btbt">
+          <Button
+            href={"https://github.com/suryanshsoni27?tab=repositories"}
+            id="button__github"
+            class="btn"
+            size="sm"
+            variant="dark"
+          >
+            GitHub
+          </Button>
+        </Nav.Item>
+        <Nav.Item>
+          <Button href="/#port__aboutme" class="btn" size="sm" variant="dark">
+            About
+          </Button>
+        </Nav.Item>
+        <Nav.Item>
+          <Button href="/#port__contactme" class="btn" size="sm" variant="dark">
+            Contact
+          </Button>
+        </Nav.Item>
+        <Nav.Item>
+          <Button href="/#port__resume" class="btn" size="sm" variant="dark">
+            Resume
+          </Button>
+        </Nav.Item>
+      </Navbar>
     </div>
   );
 }
 
-export default Navbar;
+export default Navbari;

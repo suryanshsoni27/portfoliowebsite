@@ -3,13 +3,14 @@ import "../styles/workex.css";
 import SideNav from "./SideNav";
 import ParticlesBg from "particles-bg";
 import Infowx from "../components/Infowx";
+import Navbari from "../components/Navbar";
 
 function Workex() {
   return (
     <div className="workex" id="Workex">
       <ParticlesBg type="cobweb" bg={true} color="#0A0A0A" />
       <div className="port__sidenav">
-        <SideNav />
+        <Navbari />
       </div>
 
       <div className="infosection">

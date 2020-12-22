@@ -14,7 +14,7 @@ import Carusel from "../components/Carusel";
 import SideNav from "../components/SideNav";
 import InfoCard from "../components/InfoCard";
 // import ReactPDF from "@react-pdf/renderer";
-import Pdfrender from "../components/pdfrender";
+import Navbari from "../components/Navbar";
 import Pdffile from "../components/Pdffile";
 export default function Portfolio() {
   const [numPages, setNumPages] = useState(null);
@@ -32,7 +32,7 @@ export default function Portfolio() {
   </div>*/}
 
       <div className="port__sidenav">
-        <SideNav />
+        <Navbari />
       </div>
 
       <div className="port__header">

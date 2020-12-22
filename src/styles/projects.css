@@ -11,6 +11,12 @@
     -ms-animation: fadein 1s;
     -o-animation: fadein 1s;
     animation: fadein 1s;
+    border: 1px solid;
+    border-color: black;
+    border-style: solid black;
+    border-width: 5px;
+    padding: 10px;
+    border-radius: 10px
 }
 
 .coinfo {
@@ -22,17 +28,40 @@
     opacity: 0.8;
     border-radius: 7px;
     margin-bottom: 10px;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px 8px 10px #888888;
 }
 
 .coinfo:hover {
     opacity: 1;
     background: black;
     color: white;
+    text-decoration: none;
 }
 
-.anchor {
+#anchor {
     text-decoration: none;
     color: black
+}
+
+#anchor:hover {
+    text-decoration: none;
+    color: black
+}
+
+#button__github {
+    align-items: right;
+}
+
+.pull__right {
+    align-items: center;
+}
+
+.navbar__margin {
+    padding: 10px;
+    margin-bottom: 10px;
+    ;
 }
 
 .footer__div {
@@ -49,11 +78,14 @@
 
 .project__head {
     padding: 20px;
+    margin-top: 10px;
     text-align: center;
     background-color: black;
     margin-left: 30%;
     margin-right: 30%;
     color: white;
+    border-style: solid black;
+    border-width: 5px;
     -moz-animation: fadein 2s;
     /* Firefox < 16 */
     -ms-animation: fadein 2s;

@@ -10,7 +10,11 @@
     color: black;
     background-color: #D3D3D3;
     border-style: solid;
-    border-width: 1px
+    border-width: 1px;
+    margin-top: 10px;
+    width: 50vw;
+    height: auto;
+    margin-bottom: 10px;
 }
 
 .info__card:hover {

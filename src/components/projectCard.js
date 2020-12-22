@@ -5,7 +5,7 @@ import "../styles/projects.css";
 function ProjectCard({ Header, Title, Text, link }) {
   return (
     <div>
-      <a className="anchor" href={link}>
+      <a className="anchor" id="anchor" href={link}>
         <Card className="coinfo" border="dark" style={{ width: "15em" }}>
           <Card.Header>{Header}</Card.Header>
           <Card.Body>

@@ -1,20 +1,19 @@
 import React from "react";
 import "../styles/projects.css";
-import SideNav from "./SideNav";
+import Navbari from "./Navbar";
 import Iframe from "react-iframe";
-import { Container, Col, Row } from "react-bootstrap";
+import { Container, Col, Row, Button, Nav, Navbar } from "react-bootstrap";
 import ProjectCard from "../components/projectCard";
 import ParticlesBg from "particles-bg";
+
 function Projects() {
   return (
     <div className="projects__main">
-      <SideNav />
+      <Navbari className="navbar__margin" />
       <ParticlesBg type="cobweb" num={70} bg={true} />
-
       <div className="infosection">
         <h1 className="toptext">My Projects</h1>
       </div>
-
       <div className="projects__info">
         <Container>
           <Row>
@@ -65,10 +64,32 @@ function Projects() {
                 link={"https://github.com/suryanshsoni27/machinelearningmodels"}
               />
             </Col>
+            <Col>
+              <ProjectCard
+                Header={
+                  "Made convolutional neural net to classify images of dogs and cats"
+                }
+                Title={"Python, Tensorflow, keras, pandas, & scikit-learn"}
+                Text={
+                  "Made a CNN to classify images of dogs and cat using tensorflow and keras."
+                }
+                link={"https://github.com/suryanshsoni27/neuralnets"}
+              />
+            </Col>
+            <Col>
+              <ProjectCard
+                Header={"Samfit ( Fitness app)"}
+                Title={"Xcode , Swift"}
+                Text={
+                  "Made a minimalistic Fitness App with complete functionality using swift. link to demo of theapp."
+                }
+                link={"https://github.com/suryanshsoni27/samfit-swiftcode"}
+              />
+            </Col>
           </Row>
+          <Row></Row>
         </Container>
       </div>
-
       <footer className="footer__div" />
     </div>
   );
