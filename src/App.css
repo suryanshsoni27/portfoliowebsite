@@ -40,4 +40,5 @@
 * {
     scroll-behavior: smooth;
     text-decoration: none;
+    background-blend-mode: fixed;
 }

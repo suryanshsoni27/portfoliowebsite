@@ -12,7 +12,7 @@ function App() {
         <Switch>
           <Route path="/Workex" component={Workex} />
           <Route path="/Projects" component={Projects} />
-          <Route path="/tictactoe" component={tictactoe} />
+          {/*<Route path="/tictactoe" component={tictactoe} />*/}
           <Route path="/" component={Portfolio} />
         </Switch>
       </div>

@@ -16,6 +16,9 @@ import InfoCard from "../components/InfoCard";
 // import ReactPDF from "@react-pdf/renderer";
 import Navbari from "../components/Navbar";
 import Pdffile from "../components/Pdffile";
+import Zoom from "react-reveal/Zoom";
+// import { ContactForm } from "../components/emailForm";
+
 export default function Portfolio() {
   const [numPages, setNumPages] = useState(null);
   const [pageNumber, setPageNumber] = useState(1);
@@ -44,17 +47,19 @@ export default function Portfolio() {
   </div>*/}
 
       <div>
-        <Card className="port__aboutme" id="port__aboutme">
-          <Card.Header>About me</Card.Header>
-          <Card.Body>
-            <blockquote className="blockquote mb-0">
-              <p>
-                Welcome to my page, i am Suryansh Soni, a Software Engineering
-                Major from Auburn University
-              </p>
-            </blockquote>
-          </Card.Body>
-        </Card>
+        <Zoom>
+          <Card className="port__aboutme" id="port__aboutme">
+            <Card.Header>About me</Card.Header>
+            <Card.Body>
+              <blockquote className="blockquote mb-0">
+                <p>
+                  Welcome to my page, i am Suryansh Soni, a Software Engineering
+                  Major from Auburn University
+                </p>
+              </blockquote>
+            </Card.Body>
+          </Card>
+        </Zoom>
       </div>
 
       <div className="port__infocard">
