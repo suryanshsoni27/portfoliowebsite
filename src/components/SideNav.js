@@ -22,7 +22,7 @@ function SideNav() {
         <Link to="/Workex">Work Experience</Link>
         <Link to="/Projects">Projects</Link>
         {/*<Link to="/tictactoe">tictactoe ?</Link>*/}
-        <Link to="/Chat">Chatroom</Link>
+        <Link to="/Chat">Blog Room</Link>
       </div>
       <span className="spantag" onClick={openNav}>
         &#9776;

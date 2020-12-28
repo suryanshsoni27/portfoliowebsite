@@ -70,6 +70,7 @@ function Chat() {
   const [messages] = useCollectionData(query, { idField: "id" });
 
   const [formValue, setFormValue] = useState("");
+  const [button, setButton] = useState("");
 
   const sendMessage = async (e) => {
     e.preventDefault();
@@ -88,7 +89,7 @@ function Chat() {
   };
 
   return (
-    <>
+    <div>
       <main className="chatroom_main">
         {messages &&
           messages.map((msg) => <ChatMessage key={msg.id} message={msg} />)}
@@ -96,6 +97,37 @@ function Chat() {
         <span ref={dummy}></span>
       </main>
 
+      <Formii dum={dummy} />
+    </div>
+  );
+}
+
+function Formii({ dum }) {
+  const messagesRef = firestore.collection("messages");
+  const query = messagesRef.orderBy("createdAt").limit(25);
+
+  const [messages] = useCollectionData(query, { idField: "id" });
+
+  const [formValue, setFormValue] = useState("");
+
+  const sendMessage = async (e) => {
+    e.preventDefault();
+
+    const { uid, photoURL } = auth.currentUser;
+
+    await messagesRef.add({
+      text: formValue,
+      createdAt: firebase.firestore.FieldValue.serverTimestamp(),
+      uid,
+      photoURL,
+    });
+
+    setFormValue("");
+    dum.current.scrollIntoView({ behavior: "smooth" });
+  };
+
+  return (
+    <div className="chatroom__form">
       <form className="chatroom__form" onSubmit={sendMessage}>
         <input
           value={formValue}
@@ -107,7 +139,7 @@ function Chat() {
           send
         </button>
       </form>
-    </>
+    </div>
   );
 }
 
@@ -130,9 +162,6 @@ function ChatMessage(props) {
           <div class="card-body">
             <h5 class="card-title"></h5>
             <p>{text}</p>
-            {/*<a href="#" class="btn btn-primary">
-              Go somewhere
-        </a>*/}
           </div>
         </div>
       </div>
