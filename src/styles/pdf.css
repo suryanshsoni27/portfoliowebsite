@@ -4,7 +4,7 @@
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    width: 80%;
+    width: 95%;
     border-radius: 5px;
     -webkit-transition: color 1s, font-size 2s, width 4s;
     -moz-transition: color 1s, font-size 2s, width 4s;
@@ -29,3 +29,19 @@
     color: white;
     width: 50%;
 }
+
+.pdf-container {
+    /* display: flex; */
+}
+
+.controls {
+    margin: 20px;
+}
+
+
+/* 
+@media print {
+    .pdf-container {
+        display: none;
+    }
+} */
