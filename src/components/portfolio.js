@@ -18,6 +18,7 @@ import Navbari from "../components/Navbar";
 import Pdffile from "../components/Pdffile";
 import Zoom from "react-reveal/Zoom";
 // import { ContactForm } from "../components/emailForm";
+import ContactMe from "./ContactMe";
 
 export default function Portfolio() {
   const [numPages, setNumPages] = useState(null);
@@ -73,6 +74,10 @@ export default function Portfolio() {
       <div className="port__resume" id="port__resume">
         {/*<Pdfrender />*/}
         <Pdffile />
+      </div>
+
+      <div className="email__form">
+        <ContactMe />
       </div>
 
       <div className="port__contactme" id="port__contactme">

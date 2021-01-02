@@ -25,7 +25,7 @@ function Workex() {
                   header={"Rheem Manufacturing (Aug 2020 — Dec 2020)  "}
                   subinfo={" COOP Intern"}
                   info={
-                    "Coop Intern at Rheem, made digital forms using JSP and python , and used to manage mysql database in Rheemtechnology operations. Worked on many projects during the term. Made forms that helped to automate thebusiness management and workflow at Rheem"
+                    "Coop Intern at Rheem. Made digital forms using JSP and python , and used to manage mysql database in Rheemtechnology operations. Worked on many projects during the term. Made forms that helped to automate thebusiness management and workflow at Rheem"
                   }
                 />
               </div>
@@ -37,7 +37,7 @@ function Workex() {
                   header={"Flashtract (Jan 2020 — May 2020) "}
                   subinfo={"Frontend/Machine learning developer Intern"}
                   info={
-                    "Worked on React library to make form for contracting service by putting drag and drop functionality to create the form. Made suggestion field model on spring java backend"
+                    "Worked on React to make form for contracting service. Created drag and drop functionality to create the form. Made suggestion field model on spring java backend"
                   }
                 />
               </div>
@@ -46,10 +46,10 @@ function Workex() {
               <div class="row">
                 <Infowx
                   id="infomation"
-                  header={"Planight LLC (Aug 2020 — Dec 2020)  "}
+                  header={"Planight (Aug 2020 — current)  "}
                   subinfo={"IOS App Developer/ Web Developer"}
                   info={
-                    "Hybrid(react native)/IOS App developer and Web developer at Planight. I was chosen as a developer for tiger cage competition . one of the main developers in the team."
+                    "React native/IOS App developer and Web developer at Planight. I was chosen as a developer for tiger cage competition . One of the main developers in the team, and Software Expert."
                   }
                 />
               </div>
